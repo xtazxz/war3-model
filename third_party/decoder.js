@@ -975,7 +975,7 @@ var JpegImage = (function jpegImage() {
 })();
 
 module.exports = function decode (data) {
-    const jpegImage = new JpegImage();
+    var jpegImage = new JpegImage();
 
     jpegImage.loadFromBuffer(data);
 
