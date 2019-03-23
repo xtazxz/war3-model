@@ -2,10 +2,15 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
+        "declaration": true,
         "sourceMap": true,
-        "allowJs": true
+        "allowJs": false
     },
+    "include": [
+        "*.ts"
+    ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "third_party"
     ]
 }

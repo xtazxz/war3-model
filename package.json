@@ -1,7 +1,8 @@
 {
-  "name": "war3-model",
+  "name": "xtazxz-war3-model",
   "version": "1.0.1",
   "scripts": {
+    "build": "npm i && tsc",
     "convert": "browserify docs/convert/convert.js -d -o docs/convert/convertOut.js && cat node_modules/codemirror/lib/codemirror.css node_modules/codemirror/addon/fold/foldgutter.css docs/convert/convert.css > docs/convert/convertOut.css",
     "preview": "browserify docs/preview/preview.js -d -o docs/preview/previewOut.js",
     "decodeblp": "browserify docs/decodeblp/decodeblp.js -d -o docs/decodeblp/decodeblpOut.js",

@@ -1385,7 +1385,7 @@ function generateCollisionShapes (model: Model, stream: Stream): void {
 }
 
 
-const byteLength: [(model: Model) => number] = [
+const byteLength = [
     byteLengthVersion,
     byteLengthModelInfo,
     byteLengthSequences,
@@ -1408,7 +1408,7 @@ const byteLength: [(model: Model) => number] = [
     byteLengthCollisionShapes
 ];
 
-const generators: [(model: Model, stream: Stream) => void] = [
+const generators = [
     generateVersion,
     generateModelInfo,
     generateSequences,

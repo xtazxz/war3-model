@@ -789,7 +789,7 @@ function generateCollisionShapeChunk (collisionShape: CollisionShape): string {
         generateBlockEnd();
 }
 
-const generators: [(model: Model) => string] = [
+const generators = [
     generateVersion,
     generateModel,
     generateSequences,

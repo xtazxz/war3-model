@@ -1,5 +1,8 @@
 *.js
 *.js.map
+*.d.ts
+package-lock.json
+node_modules
 !docs/convert/convertOut.js
 !docs/preview/previewOut.js
 !docs/decodeblp/decodeblpOut.js
