@@ -379,9 +379,9 @@ function initDragDrop () {
         reader.onload = () => {
             try {
                 if (isMDX) {
-                    model = parseMDX(reader.result);
+                    model = parseMDX(reader.result as ArrayBuffer);
                 } else {
-                    model = parseMDL(reader.result);
+                    model = parseMDL(reader.result as string);
                 }
             } catch (err) {
                 console.error(err);
@@ -406,7 +406,7 @@ function initDragDrop () {
 
         reader.onload = () => {
             if (isBLP) {
-                let blp = decode(reader.result);
+                let blp = decode(reader.result as ArrayBuffer);
 
                 console.log(file.name, blp);
 
@@ -420,7 +420,7 @@ function initDragDrop () {
                     modelRenderer.setTextureImage(textureName, img, textureFlags);
                 };
 
-                img.src = reader.result;
+                img.src = reader.result as string;
             }
             handleLoadedTexture();
         };

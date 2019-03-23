@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function init () {
 
         reader.onload = () => {
             try {
-                let blp: BLPImage = decode(reader.result);
+                let blp: BLPImage = decode(reader.result as ArrayBuffer);
 
                 console.log(blp);
 

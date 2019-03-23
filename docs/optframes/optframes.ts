@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', function init () {
         reader.onload = () => {
             try {
                 if (isMDX) {
-                    model = parseMDX(reader.result);
+                    model = parseMDX(reader.result as ArrayBuffer);
                 } else {
-                    model = parseMDL(reader.result);
+                    model = parseMDL(reader.result as string);
                 }
             } catch (err) {
                 showError(err);
